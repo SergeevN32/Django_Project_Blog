@@ -1,0 +1,12 @@
+<div class="rightcolumn">
+    <div class="card">
+      <a href="{% url 'info-author' %}"><h2>About Me</h2></a>
+      <img src="{{ author_content.photo.url }}" alt="" height="200">
+      <p>{{ author_content.description }}</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>telegram: {{ author_content.telegram }}</p>
+      <p>instagram: {{ author_content.instagram }}</p>
+    </div>
+  </div>

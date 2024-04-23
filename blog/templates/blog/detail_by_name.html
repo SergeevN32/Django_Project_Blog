@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Пост "{{post.title}}"
+{% endblock %}
+
+{% block content %}
+    <div class="leftcolumn">
+        <div class="card">
+          <h2>{{ post.title }}</h2>
+          <h5>{{ post.description }}, {{ post.date }}</h5>
+            <a href="{{ post.get_url }}"><img src="{{ post.image.url }}" alt="" height="500"></a>
+          <p>{{ post.content }}</p>
+        </div>
+    </div>
+{% endblock %}

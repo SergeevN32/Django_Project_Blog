@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Информация об авторе
+{% endblock %}
+
+{% block content %}
+    <div class="leftcolumn">
+        <div class="card">
+            <img src="{{ author_content.photo.url }}" alt="" height="500">
+          <p>{{ author_content.full_description }}</p>
+        </div>
+    </div>
+{% endblock %}
