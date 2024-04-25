@@ -7,7 +7,7 @@
 Run the following commands to bootstrap your environment:
     
     pip install virtualenv
-    git clone ...
+    git clone https://github.com/niksergs/Django_Project_Blog
     cd my_blog
 
     python -m venv venv
